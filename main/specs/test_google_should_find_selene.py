@@ -10,5 +10,5 @@ def test_search_with_results():
 def test_search_without_results():
     browser.open('')
     browser.element('[name="q"]').should(be.blank).type('124wfqw r12r asf').press_enter()
-    browser.element('#topstuff').should(have.text('არ მოერგო არც ერთ დოკუმენტს'))
+    browser.element('#topstuff').should(have.text('did not match any documents.'))
     browser.quit()
