@@ -16,6 +16,4 @@ def setup_browser():
     config.window_width = 1920
     config.window_height = 1080
     config.base_url = 'https://www.google.com/ncr'
-
-
-
+    
