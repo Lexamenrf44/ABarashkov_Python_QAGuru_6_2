@@ -12,6 +12,5 @@ def test_search_with_results():
 
 def test_search_without_results():
     browser.element(App.search_field).should(be.blank)
-    browser.element(App.search_field).type('124wfqw r12r asf')
-    browser.element(App.search_button).click()
+    browser.element(App.search_field).type('sdsdlsdj sdflsfdkjs sdfsjkjdf sdfs').press_enter()
     browser.element(App.search_list_empty).should(have.text('did not match any documents.'))
